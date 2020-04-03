@@ -1,0 +1,80 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Project 6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <p>Please tell us your first and last name, along with your email address. Then please answer theqiestions below honestly.</p>
+
+    <form>
+        <div id="names">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </div> <!-- close #names -->
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div> <!-- close .group-form -->
+
+        <div id="buttons">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div class="form-group">
+            <label for="zodiacSign">What is your Zodiac Sign</label>
+            <select class="form-control" id="signs">
+                <option>Aries (March 21 - April 20)</option>
+                <option>Taurus (April 21 - May- 20)</option>
+                <option>Gemini (May 21 - June 20)</option>
+                <option>Cancer (June 21 - July 22)</option>
+                <option>Leo (July 23 - August 22)</option>
+                <option>Virgo (August 23 - September 22)</option>
+                <option>Libra (September 23 - Ovtober22)</option>
+                <option>Scorpio (October 23 - November 22)</option>
+                <option>Sagittarius (November 23 - December 21)</option>
+                <option>Capricorn (December 22 - January 19)</option>
+                <option>Aquarius (January 20 - February 19)</option>
+                <option>Pisces (February 20 - March 20)</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label for="select question">What generation are you apart of?</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Baby Boomers (1946-1964)</option>
+                <option>Generation X (1964-1981)</option>
+                <option>Millenial (1981-1996)</option>
+                <option>Generation Z (1997-2012)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="spiritAnimal">What is your Spirit Animal and why?</label>
+            <textarea class="form-control" id="spiritAnimal" rows="3"></textarea>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <form action="https://formspree.io/xqkdayvk" method="POST">
+        <input type="text" name="name">
+        <input type="email" name="_replyto">
+        <input type="submit" value="Send">
+    </form>
+
+
+</body>
+
+
+</html>
